@@ -42,8 +42,13 @@ def lines_to_string(f):
 
 def write_line(f, l):
     with open(f, "w") as outfile:
+        linenum= 0
+        numlines= len(l)
         for line in l:
-            outfile.write(line+ '\n')
+            linenum +=1
+            outfile.write(line)
+            if linenum < numlines:
+                outfile.write('\n')
 
 if __name__ == '__main__':
     infile= sys.argv[1]
