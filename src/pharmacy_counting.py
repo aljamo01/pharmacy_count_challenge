@@ -10,7 +10,7 @@ def count_sum (f):
 
             l = line.rstrip().split(",")
             drug_name= l[-2]
-            drug_cost= float(l[-1])
+            drug_cost= int(l[-1])
             prescriber = l[-4]+','+l[-3]
             if drug_name in dic.keys():
 
