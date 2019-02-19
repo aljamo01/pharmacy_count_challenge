@@ -1,3 +1,4 @@
 
 .idea/
 input/itcont.txt
+*.DS_Store
